@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Khoá học</title>
+
+	<!-- Liên kết Font Awesome CDN (Liên kết Font Awesome CDN) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- CSS Bên Ngoài (CSS Bên Ngoài) -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+
+	<!-- Liên kết CDN của jQuery (Liên kết CDN của jQuery) -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Bắt đầu phần Điều hướng (Navigation) -->
+	<nav>
+		<img src="img/logo.svg" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Trang chủ</a></li>
+				<li><a href="about.html">Về chúng tôi</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="courses.html" class="active">Khoá học</a></li>
+				<li><a href="contact.html">Liên hệ</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Kết thúc phần Điều hướng (Navigation) -->
+
+
+	<!-- Bắt đầu phần Thần tượng (Hero) -->
+	<section id="about-home">
+		<h2>
+			Khoá học
+		</h2>
+	</section>
+	<!-- Kết thúc phần Thần tượng (Hero) -->
+
+	<!-- Bắt đầu phần Khoá học (Courses) -->
+	<section id="course">
+		<h1>Các Khoá học Phổ biến Của Chúng Tôi</h1>
+		<p>Làm mới người, có điều hòa tụ đèn sáng sẽ bạn (Replenish man have thing gathering lights yielding shall you)</p>
+
+		<div class="course-box">
+			<div class="courses" onclick="window.location.href='course-inner.html'">
+				<img src="img/c1.jpg" alt="">
+				<div class="details">
+					<span>Cập nhật 21/8/22</span>
+					<h6>Khoá học Cơ bản về JavaScript</h6>
+
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+
+						<span>(239)</span>
+					</div>
+				</div>
+				<div class="cost">$49.99</div>
+			</div>
+
+			<!-- Thêm các phần khoá học khác ở đây -->
+		</div>
+	</section>
+	<!-- Kết thúc phần Khoá học (Courses) -->
+
+	<!-- Bắt đầu phần Chân trang (Footer) -->
+	<footer>
+		<div class="footer-col">
+			<h3>Sản phẩm Nổi bật</h3>
+			<ul>
+				<li>Quản lý danh tiếng</li>
+				<li>Công cụ Điện</li>
+				<li>Trang web Được quản lý</li>
+				<li>Dịch vụ Tiếp thị</li>
+			</ul>
+		</div>
+
+		<div class="footer-col">
+			<h3>Công cụ Điện</h3>
+			<ul>
+				<li>Công việc</li>
+				<li>Dịch vụ Tiếp thị</li>
+				<li>Sản phẩm Nổi bật</li>
+				<li>Quản lý danh tiếng</li>
+			</ul>
+		</div>
+
+		<div class="footer-col">
+			<h3>Công cụ Điện</h3>
+			<ul>
+				<li>Trang web Được quản lý</li>
+				<li>Quản lý danh tiếng</li>
+				<li>Sản phẩm Nổi bật</li>
+				<li>Dịch vụ Tiếp thị</li>
+			</ul>
+		</div>
+	</footer>
+	<!-- Kết thúc phần Chân trang (Footer) -->
+
+	<script>
+		// Hiển thị liên kết điều hướng khi nhấn nút Burger
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Ẩn thanh điều hướng khi nhấn
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>
