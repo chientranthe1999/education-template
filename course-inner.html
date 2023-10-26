@@ -1,227 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Khoá học</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khoá học</title>
 
-	<!-- Liên kết Font Awesome CDN -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- CSS Bên Ngoài -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="course-inner.css" />
 
-	<!-- CSS Bên Ngoài -->
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="about.css">
-	<link rel="stylesheet" href="course-inner.css">
+    <!-- Liên kết CDN của jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Liên kết Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/ad89dc3584.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Bắt đầu Điều hướng -->
+    <nav>
+      <img src="img/logo.svg" class="logo" alt="" />
 
-	<!-- Liên kết CDN của jQuery -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-</head>
-<body>
-	<!-- Bắt đầu Điều hướng -->
-	<nav>
-		<img src="img/logo.svg" class="logo" alt="">
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="courses.html" class="active">Khoá học</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
 
-		<div class="navigation">
-			<ul>
-				<i id="menu-close" class="fas fa-times"></i>
-				<li><a href="index.html">Trang chủ</a></li>
-				<li><a href="about.html">Về chúng tôi</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="courses.html" class="active">Khoá học</a></li>
-				<li><a href="contact.html">Liên hệ</a></li>
-			</ul>
+        <img src="img/menu.png" id="menu-btn" alt="" />
+      </div>
+    </nav>
+    <!-- Kết thúc Điều hướng -->
 
-			<img src="img/menu.png" id="menu-btn" alt="">
-		</div>
-	</nav>
-	<!-- Kết thúc Điều hướng -->
+    <!-- Bắt đầu phần Hero -->
+    <section id="about-home">
+      <h2>Đăng ký Khoá học Phổ biến của Chúng Tôi và Nâng cao Kỹ năng</h2>
+    </section>
+    <!-- Kết thúc phần Hero -->
 
+    <!-- Bắt đầu phần Nội dung Khoá học -->
+    <section id="course-inner">
+      <div class="overview">
+        <img class="course-img" src="img/c1.jpg" alt="" />
 
-	<!-- Bắt đầu phần Hero -->
-	<section id="about-home">
-		<h2>
-			Đăng ký Khoá học Phổ biến của Chúng Tôi và Nâng cao Kỹ năng
-		</h2>
-	</section>
-	<!-- Kết thúc phần Hero -->
+        <div class="course-head">
+          <div class="c-name">
+            <h2>Khoá học Cơ bản về JavaScript</h2>
 
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
 
-	<!-- Bắt đầu phần Nội dung Khoá học -->
-	<section id="course-inner">
-		<div class="overview">
-			<img class="course-img" src="img/c1.jpg" alt="">
+            <p>Javascript hiện đại từ đầu - cho đến mức xuất khẩu JS! Tài liệu JavaScript phải có trong năm 2021.</p>
+          </div>
+          <span>$49.99</span>
+        </div>
 
-			<div class="course-head">
-				<div class="c-name">
-					<h2>Khoá học Cơ bản về JavaScript</h2>
+        <h3>Giảng viên</h3>
+        <div class="tutor">
+          <img src="img/c4.jpg" alt="" />
+          <div class="tutor-det">
+            <h5>John Doe</h5>
+            <p>Phát triển Web tại Google</p>
+          </div>
+        </div>
 
-					<div class="star">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
+        <hr />
 
-					<p>
-						Javascript hiện đại từ đầu - cho đến mức xuất khẩu JS! Tài liệu JavaScript phải có trong năm 2021.
-					</p>
-				</div>
-				<span>$49.99</span>
-			</div>
+        <h3>Tổng quan Khóa học</h3>
 
-			<h3>Giảng viên</h3>
-			<div class="tutor">
-				<img src="img/c4.jpg" alt="">
-				<div class="tutor-det">
-					<h5>John Doe</h5>
-					<p>Phát triển Web tại Google</p>
-				</div>
-			</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aut ipsa quam impedit accusamus labore eligendi neque cupiditate repellat asperiores!</p>
+        <br />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Modi reprehenderit dolorum nemo voluptatibus, ad nam, blanditiis ipsa pariatur, assumenda animi repellendus vero omnis fuga quas, est? Vitae, reprehenderit quo quas.</p>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit recusandae tempore quia repellat officiis voluptatum blanditiis, cupiditate, sit minus beatae distinctio, numquam illum alias repellendus ad quis earum voluptatibus iusto.
+          Ut est, velit deserunt? Tempore modi hic error nam, vel?
+        </p>
 
-			<hr>
+        <hr />
 
-			<h3>Tổng quan Khóa học</h3>
+        <h3>Nội dung Học</h3>
 
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aut ipsa quam impedit accusamus labore eligendi neque cupiditate repellat asperiores!
-			</p>
-			<br>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing, elit. Modi reprehenderit dolorum nemo voluptatibus, ad nam, blanditiis ipsa pariatur, assumenda animi repellendus vero omnis fuga quas, est? Vitae, reprehenderit quo quas.
-			</p>
-			<br>
-			<p>
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit recusandae tempore quia repellat officiis voluptatum blanditiis, cupiditate, sit minus beatae distinctio, numquam illum alias repellendus ad quis earum voluptatibus iusto. Ut est, velit deserunt? Tempore modi hic error nam, vel?
-			</p>
+        <div class="learn">
+          <p><i class="far fa-check-circle"></i> Lorem, ipsum dolor sit amet consectetur.</p>
+          <p><i class="far fa-check-circle"></i> Lorem, ipsum dolor sit amet consectetur.</p>
+          <p><i class="far fa-check-circle"></i> Lorem, ipsum dolor sit amet consectetur.</p>
+          <p><i class="far fa-check-circle"></i> Lorem, ipsum dolor sit amet consectetur.</p>
+          <p><i class="far fa-check-circle"></i> Lorem, ipsum dolor sit amet consectetur.</p>
+          <p><i class="far fa-check-circle"></i> Lorem, ipsum dolor sit amet consectetur.</p>
 
-			<hr>
+          <div class="enroll-btn">
+            <a href="#" class="blue">Đăng ký Khoá học</a>
+          </div>
+        </div>
+      </div>
 
-			<h3>Nội dung Học</h3>
+      <div class="enroll">
+        <h3>Khoá học bao gồm:</h3>
 
-			<div class="learn">
-				<p>
-					<i class="far fa-check-circle"></i> Lorem, ipsum dolor sit amet consectetur.
-				</p>
-				<p>
-					<i class="far fa-check-circle"></i> Lorem, ipsum dolor sit amet consectetur.
-				</p>
-				<p>
-					<i class="far fa-check-circle"></i> Lorem, ipsum dolor sit amet consectetur.
-				</p>
-				<p>
-					<i class="far fa-check-circle"></i> Lorem, ipsum dolor sit amet consectetur.
-				</p>
-				<p>
-					<i class="far fa-check-circle"></i> Lorem, ipsum dolor sit amet consectetur.
-				</p>
-				<p>
-					<i class="far fa-check-circle"></i> Lorem, ipsum dolor sit amet consectetur.
-				</p>
+        <p><i class="fa-solid fa-gear"></i> 52 Giờ video</p>
+        <p><i class="fa-solid fa-newspaper"></i> 5 Bài viết</p>
+        <p><i class="fas fa-ad"></i> Tài liệu tải về</p>
+        <p><i class="fas fa-key"></i> Truy cập vĩnh viễn</p>
+        <p><i class="fas fa-tv"></i> Truy cập trên di động và TV</p>
+        <p><i class="fas fa-paperclip"></i> Bài tập</p>
 
-				<div class="enroll-btn">
-					<a href="#" class="blue">Đăng ký Khoá học</a>
-				</div>
-			</div>
-		</div>
+        <div class="enroll-btn">
+          <a href="#" class="blue">Đăng ký Khoá học</a>
+        </div>
+      </div>
+    </section>
+    <!-- Kết thúc phần Nội dung Khoá học -->
 
-		<div class="enroll">
-			<h3>Khoá học bao gồm:</h3>
+    <!-- Bắt đầu phần Chân trang -->
+    <footer>
+      <div class="footer-col">
+        <h3>Sản phẩm Nổi bật</h3>
+        <li>Quản lý danh tiếng</li>
+        <li>Công cụ Điện</li>
+        <li>Trang web Được quản lý</li>
+        <li>Dịch vụ Tiếp thị</li>
+      </div>
 
-			<p>
-				<i class="fas fa-video"></i> 52 Giờ video
-			</p>
-			<p>
-				<i class="fas fa-newspaper"></i> 5 Bài viết
-			</p>
-			<p>
-				<i class="fas fa-download"></i> Tài liệu tải về
-			</p>
-			<p>
-				<i class="fas fa-key"></i> Truy cập vĩnh viễn
-			</p>
-			<p>
-				<i class="fas fa-tv"></i> Truy cập trên di động và TV
-			</p>
-			<p>
-				<i class="fas fa-paperclip"></i> Bài tập
-			</p>
+      <div class="footer-col">
+        <h3>Công cụ Điện</h3>
+        <li>Công việc</li>
+        <li>Dịch vụ Tiếp thị</li>
+        <li>Sản phẩm Nổi bật</li>
+        <li>Quản lý danh tiếng</li>
+      </div>
 
-			<div class="enroll-btn">
-				<a href="#" class="blue">Đăng ký Khoá học</a>
-			</div>
-		</div>
-	</section>
-	<!-- Kết thúc phần Nội dung Khoá học -->
+      <div class="footer-col">
+        <h3>Công cụ Điện</h3>
+        <li>Trang web Được quản lý</li>
+        <li>Quản lý danh tiếng</li>
+        <li>Sản phẩm Nổi bật</li>
+        <li>Dịch vụ Tiếp thị</li>
+      </div>
 
+      <div class="footer-col">
+        <h3>Hướng dẫn</h3>
+        <li>Nghiên cứu</li>
+        <li>Chuyên gia</li>
+        <li>Trang web Được quản lý</li>
+        <li>Dịch vụ Tiếp thị</li>
+      </div>
 
-	<!-- Bắt đầu phần Chân trang -->
-	<footer>
-		<div class="footer-col">
-			<h3>Sản phẩm Nổi bật</h3>
-			<li>Quản lý danh tiếng</li>
-			<li>Công cụ Điện</li>
-			<li>Trang web Được quản lý</li>
-			<li>Dịch vụ Tiếp thị</li>
-		</div>
+      <div class="footer-col">
+        <h3>Bản tin</h3>
+        <p>Bạn có thể tin tưởng chúng tôi. Chúng tôi chỉ gửi ưu đãi khuyến mãi.</p>
 
-		<div "footer-col">
-			<h3>Công cụ Điện</h3>
-			<li>Công việc</li>
-			<li>Dịch vụ Tiếp thị</li>
-			<li>Sản phẩm Nổi bật</li>
-			<li>Quản lý danh tiếng</li>
-		</div>
+        <div class="subscribe">
+          <input type="email" placeholder="Địa chỉ email của bạn" />
+          <a href="#" class="yellow">ĐĂNG KÝ</a>
+        </div>
+      </div>
 
-		<div "footer-col">
-			<h3>Công cụ Điện</h3>
-			<li>Trang web Được quản lý</li>
-			<li>Quản lý danh tiếng</li>
-			<li>Sản phẩm Nổi bật</li>
-			<li>Dịch vụ Tiếp thị</li>
-		</div>
+      <div class="copyright">
+        <p>Bản quyền @ 2022 Đã đăng ký Bảo lưu tất cả | Mẫu này được tạo bởi <a href="https://atulcodex.com" target="_blank">atulcodex</a></p>
+        <div class="pro-links">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+    <!-- Kết thúc phần Chân trang -->
 
-		<div "footer-col">
-			<h3>Hướng dẫn</h3>
-			<li>Nghiên cứu</li>
-			<li>Chuyên gia</li>
-			<li>Trang web Được quản lý</li>
-			<li>Dịch vụ Tiếp thị</li>
-		</div>
+    <script>
+      // Hiển thị liên kết điều hướng khi nhấn nút Burger
+      $('#menu-btn').click(function () {
+        $('nav .navigation ul').addClass('active')
+      })
 
-		<div "footer-col">
-			<h3>Bản tin</h3>
-			<p>Bạn có thể tin tưởng chúng tôi. Chúng tôi chỉ gửi ưu đãi khuyến mãi.</p>
-
-			<div class="subscribe">
-				<input type="email" placeholder="Địa chỉ email của bạn">
-				<a href="#" class="yellow">ĐĂNG KÝ</a>
-			</div>
-		</div>
-
-		<div "copyright">
-			<p>
-				Bản quyền @ 2022 Đã đăng ký Bảo lưu tất cả | Mẫu này được tạo bởi <a href="https://atulcodex.com" target="_blank">atulcodex</a>
-			</p>
-			<div class="pro-links">
-				<i class="fab fa-facebook"></i>
-				<i class="fab fa-instagram"></i>
-				<i class="fab fa-linkedin-in"></i>
-			</div>
-		</div>
-	</footer>
-	<!-- Kết thúc phần Chân trang -->
-
-	<script>
-		// Hiển thị liên kết điều hướng khi nhấn nút Burger
-		$('#menu-btn').click(function(){
-			$('nav .navigation ul').addClass('active')
-		});
-
-		// Ẩn thanh điều hướng khi nhấn
-		$('#menu-close').click(function(){
-			$('nav .navigation ul').removeClass('active')
-		});
-	</script>
-</body>
+      // Ẩn thanh điều hướng khi nhấn
+      $('#menu-close').click(function () {
+        $('nav .navigation ul').removeClass('active')
+      })
+    </script>
+  </body>
 </html>
